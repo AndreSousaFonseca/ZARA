@@ -4,7 +4,7 @@ This system enhances a medical Q&A dataset by extracting entities using Scispacy
 Approach
 Data Preprocessing: The medical Q&A data is enhanced by extracting medical entities (e.g., diseases, symptoms) using SciSpacy's.
 Document Conversion: The enhanced data is converted into LangChain Document objects, including metadata like disease type and UMLS codes.
-Vector Store Creation: The documents are embedded using a medical-specific BERT model, stored in a FAISS vector store for efficient retrieval.
+Vector Database Creation: The documents are embedded using a medical-specific BERT model, stored in a FAISS vector store for efficient retrieval.
 RAG Model: A Groq LLM (e.g., llama3-70b-8192) is used for context-based medical query answering, leveraging retrieved documents to generate accurate responses.
 
 Performance
